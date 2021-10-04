@@ -1,3 +1,4 @@
+@Library('shared-library') _
 pipeline {
     agent any
     environment {
@@ -7,7 +8,7 @@ pipeline {
         stage("Checkout code") {
             steps {
                 script {
-                   checkout scm
+                   scmCheck()
                 }
             }
         }
