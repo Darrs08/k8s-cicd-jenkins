@@ -15,6 +15,7 @@ pipeline {
         stage("Build image") {
             steps {
                 script {
+                    step.buildNum()
                     step.buildImage('darrs08')
                 }
             }
