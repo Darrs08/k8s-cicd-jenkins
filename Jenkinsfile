@@ -24,8 +24,8 @@ pipeline {
             steps {
                 script {
                     step.pushImage()
-                }
-            }
-          }        
-        }
+           }
+         }
+       }        
+     }
    }
