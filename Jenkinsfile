@@ -23,7 +23,7 @@ pipeline {
         stage("Push image") {
             steps {
                 script {
-                    step.pushImage()
+                    step.pushImage('dockerhub')
            }
          }
        }        
